@@ -1,1 +1,9 @@
+Conway's Game of Life in Elm
+============================
 WIP
+
+## Development
+```
+elm package install
+elm reactor
+```
