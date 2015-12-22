@@ -12,11 +12,27 @@ Elm.Game.make = function (_elm) {
    $Maybe = Elm.Maybe.make(_elm),
    $Result = Elm.Result.make(_elm),
    $Signal = Elm.Signal.make(_elm),
-   $StartApp$Simple = Elm.StartApp.Simple.make(_elm);
+   $StartApp$Simple = Elm.StartApp.Simple.make(_elm),
+   $Svg = Elm.Svg.make(_elm),
+   $Svg$Attributes = Elm.Svg.Attributes.make(_elm);
    var _op = {};
-   var initialModel = {board: _U.list([_U.list([0,0,0,0]),_U.list([0,0,0,0]),_U.list([0,0,0,0]),_U.list([0,0,0,0])]),step: 0};
-   var eachRow = F2(function (address,row) {    return A2($Html.div,_U.list([]),_U.list([$Html.text($Basics.toString(row))]));});
-   var board = F2(function (address,model) {    return A2($Html.div,_U.list([]),A2($List.map,eachRow(address),model.board));});
+   var cellSize = 50;
+   var drawCell = function (cell) {
+      return A2($Svg.rect,
+      _U.list([$Svg$Attributes.x($Basics.toString(cell.x * cellSize))
+              ,$Svg$Attributes.y($Basics.toString(cell.y * cellSize))
+              ,$Svg$Attributes.width($Basics.toString(cellSize))
+              ,$Svg$Attributes.height($Basics.toString(cellSize))
+              ,$Svg$Attributes.style("fill: #efefef")]),
+      _U.list([]));
+   };
+   var drawBoard = F2(function (size,living) {
+      return A2($Svg.svg,
+      _U.list([$Svg$Attributes.width($Basics.toString(cellSize * size))
+              ,$Svg$Attributes.height($Basics.toString(cellSize * size))
+              ,$Svg$Attributes.style("background-color: #222")]),
+      A2($List.map,drawCell,living));
+   });
    var update = F2(function (action,model) {
       var _p0 = action;
       if (_p0.ctor === "NoOp") {
@@ -29,11 +45,24 @@ Elm.Game.make = function (_elm) {
    var view = F2(function (address,model) {
       return A2($Html.div,
       _U.list([]),
-      _U.list([A2(board,address,model)
-              ,A2($Html.button,_U.list([A2($Html$Events.onClick,address,Step)]),_U.list([$Html.text("step")]))
-              ,$Html.text($Basics.toString(model.step))]));
+      _U.list([$Html.text("Game of Life")
+              ,A2($Html.div,_U.list([]),_U.list([A2(drawBoard,model.size,model.living)]))
+              ,A2($Html.div,_U.list([]),_U.list([$Html.text($Basics.toString(model.step))]))
+              ,A2($Html.div,_U.list([]),_U.list([A2($Html.button,_U.list([A2($Html$Events.onClick,address,Step)]),_U.list([$Html.text("Step")]))]))]));
    });
-   var main = $StartApp$Simple.start({model: initialModel,view: view,update: update});
+   var main = $StartApp$Simple.start({view: view,update: update,model: {step: 0,size: 4,living: _U.list([{x: 0,y: 0},{x: 1,y: 1},{x: 2,y: 2},{x: 3,y: 3}])}});
    var NoOp = {ctor: "NoOp"};
-   return _elm.Game.values = {_op: _op,NoOp: NoOp,Step: Step,update: update,eachRow: eachRow,board: board,view: view,initialModel: initialModel,main: main};
+   var Model = F3(function (a,b,c) {    return {step: a,size: b,living: c};});
+   var Cell = F2(function (a,b) {    return {x: a,y: b};});
+   return _elm.Game.values = {_op: _op
+                             ,Cell: Cell
+                             ,Model: Model
+                             ,NoOp: NoOp
+                             ,Step: Step
+                             ,update: update
+                             ,cellSize: cellSize
+                             ,drawCell: drawCell
+                             ,drawBoard: drawBoard
+                             ,view: view
+                             ,main: main};
 };

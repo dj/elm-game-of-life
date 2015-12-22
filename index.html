@@ -1,5 +1,6 @@
-var Elm = Elm || { Native: {} };
-Elm.Native.Array = {};
+<!DOCTYPE HTML>
+<html><head><meta charset="UTF-8"><title>Game</title><style>html,head,body { padding:0; margin:0; }
+body { font-family: calibri, helvetica, arial, sans-serif; }</style><script type="text/javascript">var Elm = Elm || { Native: {} };Elm.Native.Array = {};
 Elm.Native.Array.make = function(localRuntime) {
 
 	localRuntime.Native = localRuntime.Native || {};
@@ -979,7 +980,6 @@ Elm.Native.Array.make = function(localRuntime) {
 
 	return localRuntime.Native.Array.values = Elm.Native.Array.values;
 };
-
 Elm.Native.Basics = {};
 Elm.Native.Basics.make = function(localRuntime) {
 	localRuntime.Native = localRuntime.Native || {};
@@ -1116,7 +1116,6 @@ Elm.Native.Basics.make = function(localRuntime) {
 		isInfinite: isInfinite
 	};
 };
-
 Elm.Native.Port = {};
 
 Elm.Native.Port.make = function(localRuntime) {
@@ -1248,7 +1247,6 @@ Elm.Native.Port.make = function(localRuntime) {
 		outboundSignal: outboundSignal
 	};
 };
-
 if (!Elm.fullscreen) {
 	(function() {
 		'use strict';
@@ -1885,7 +1883,6 @@ if (!Elm.fullscreen) {
 			: fun(a)(b)(c)(d)(e)(f)(g)(h)(i);
 	}
 }
-
 Elm.Native = Elm.Native || {};
 Elm.Native.Utils = {};
 Elm.Native.Utils.make = function(localRuntime) {
@@ -2416,7 +2413,6 @@ Elm.Native.Utils.make = function(localRuntime) {
 		toString: toString
 	};
 };
-
 Elm.Basics = Elm.Basics || {};
 Elm.Basics.make = function (_elm) {
    "use strict";
@@ -2531,8 +2527,7 @@ Elm.Basics.make = function (_elm) {
                                ,LT: LT
                                ,EQ: EQ
                                ,GT: GT};
-};
-Elm.Maybe = Elm.Maybe || {};
+};Elm.Maybe = Elm.Maybe || {};
 Elm.Maybe.make = function (_elm) {
    "use strict";
    _elm.Maybe = _elm.Maybe || {};
@@ -2613,8 +2608,7 @@ Elm.Maybe.make = function (_elm) {
                               ,oneOf: oneOf
                               ,Just: Just
                               ,Nothing: Nothing};
-};
-Elm.Native.List = {};
+};Elm.Native.List = {};
 Elm.Native.List.make = function(localRuntime) {
 	localRuntime.Native = localRuntime.Native || {};
 	localRuntime.Native.List = localRuntime.Native.List || {};
@@ -2778,7 +2772,6 @@ Elm.Native.List.make = function(localRuntime) {
 	};
 	return localRuntime.Native.List.values = Elm.Native.List.values;
 };
-
 Elm.List = Elm.List || {};
 Elm.List.make = function (_elm) {
    "use strict";
@@ -2952,8 +2945,7 @@ Elm.List.make = function (_elm) {
                              ,sort: sort
                              ,sortBy: sortBy
                              ,sortWith: sortWith};
-};
-Elm.Array = Elm.Array || {};
+};Elm.Array = Elm.Array || {};
 Elm.Array.make = function (_elm) {
    "use strict";
    _elm.Array = _elm.Array || {};
@@ -3012,8 +3004,7 @@ Elm.Array.make = function (_elm) {
                               ,filter: filter
                               ,foldl: foldl
                               ,foldr: foldr};
-};
-Elm.Native.Char = {};
+};Elm.Native.Char = {};
 Elm.Native.Char.make = function(localRuntime) {
 	localRuntime.Native = localRuntime.Native || {};
 	localRuntime.Native.Char = localRuntime.Native.Char || {};
@@ -3033,7 +3024,6 @@ Elm.Native.Char.make = function(localRuntime) {
 		toLocaleLower: function(c) { return Utils.chr(c.toLocaleLowerCase()); }
 	};
 };
-
 Elm.Char = Elm.Char || {};
 Elm.Char.make = function (_elm) {
    "use strict";
@@ -3067,8 +3057,7 @@ Elm.Char.make = function (_elm) {
                              ,toLocaleLower: toLocaleLower
                              ,toCode: toCode
                              ,fromCode: fromCode};
-};
-Elm.Native.Color = {};
+};Elm.Native.Color = {};
 Elm.Native.Color.make = function(localRuntime) {
 	localRuntime.Native = localRuntime.Native || {};
 	localRuntime.Native.Color = localRuntime.Native.Color || {};
@@ -3107,7 +3096,6 @@ Elm.Native.Color.make = function(localRuntime) {
 		toCss: toCss
 	};
 };
-
 Elm.Color = Elm.Color || {};
 Elm.Color.make = function (_elm) {
    "use strict";
@@ -3270,8 +3258,7 @@ Elm.Color.make = function (_elm) {
                               ,lightGray: lightGray
                               ,gray: gray
                               ,darkGray: darkGray};
-};
-Elm.Native.Signal = {};
+};Elm.Native.Signal = {};
 
 Elm.Native.Signal.make = function(localRuntime) {
 	localRuntime.Native = localRuntime.Native || {};
@@ -3741,7 +3728,6 @@ Elm.Native.Signal.make = function(localRuntime) {
 		delay: F2(delay)
 	};
 };
-
 Elm.Native.Transform2D = {};
 Elm.Native.Transform2D.make = function(localRuntime) {
 	localRuntime.Native = localRuntime.Native || {};
@@ -3852,7 +3838,6 @@ Elm.Native.Transform2D.make = function(localRuntime) {
 		*/
 	};
 };
-
 Elm.Transform2D = Elm.Transform2D || {};
 Elm.Transform2D.make = function (_elm) {
    "use strict";
@@ -3879,7 +3864,6 @@ Elm.Transform2D.make = function (_elm) {
                                     ,scaleX: scaleX
                                     ,scaleY: scaleY};
 };
-
 // setup
 Elm.Native = Elm.Native || {};
 Elm.Native.Graphics = Elm.Native.Graphics || {};
@@ -4543,7 +4527,6 @@ Elm.Native.Graphics.Collage.make = function(localRuntime) {
 		collage: F3(collage)
 	};
 };
-
 
 // setup
 Elm.Native = Elm.Native || {};
@@ -5280,7 +5263,6 @@ Elm.Native.Graphics.Element.make = function(localRuntime) {
 		markdown: markdown
 	};
 };
-
 Elm.Native.Text = {};
 Elm.Native.Text.make = function(localRuntime) {
 	localRuntime.Native = localRuntime.Native || {};
@@ -5568,7 +5550,6 @@ Elm.Native.Text.make = function(localRuntime) {
 		renderHtml: renderHtml
 	};
 };
-
 Elm.Text = Elm.Text || {};
 Elm.Text.make = function (_elm) {
    "use strict";
@@ -5620,8 +5601,7 @@ Elm.Text.make = function (_elm) {
                              ,Under: Under
                              ,Over: Over
                              ,Through: Through};
-};
-Elm.Graphics = Elm.Graphics || {};
+};Elm.Graphics = Elm.Graphics || {};
 Elm.Graphics.Element = Elm.Graphics.Element || {};
 Elm.Graphics.Element.make = function (_elm) {
    "use strict";
@@ -5818,8 +5798,7 @@ Elm.Graphics.Element.make = function (_elm) {
                                          ,topRightAt: topRightAt
                                          ,bottomLeftAt: bottomLeftAt
                                          ,bottomRightAt: bottomRightAt};
-};
-Elm.Graphics = Elm.Graphics || {};
+};Elm.Graphics = Elm.Graphics || {};
 Elm.Graphics.Collage = Elm.Graphics.Collage || {};
 Elm.Graphics.Collage.make = function (_elm) {
    "use strict";
@@ -5950,8 +5929,7 @@ Elm.Graphics.Collage.make = function (_elm) {
                                          ,Smooth: Smooth
                                          ,Sharp: Sharp
                                          ,Clipped: Clipped};
-};
-Elm.Native.Debug = {};
+};Elm.Native.Debug = {};
 Elm.Native.Debug.make = function(localRuntime) {
 	localRuntime.Native = localRuntime.Native || {};
 	localRuntime.Native.Debug = localRuntime.Native.Debug || {};
@@ -6017,7 +5995,6 @@ Elm.Native.Debug.make = function(localRuntime) {
 		watchSummary: F3(watchSummary)
 	};
 };
-
 Elm.Debug = Elm.Debug || {};
 Elm.Debug.make = function (_elm) {
    "use strict";
@@ -6031,8 +6008,7 @@ Elm.Debug.make = function (_elm) {
    var crash = $Native$Debug.crash;
    var log = $Native$Debug.log;
    return _elm.Debug.values = {_op: _op,log: log,crash: crash,watch: watch,watchSummary: watchSummary,trace: trace};
-};
-Elm.Native.Task = {};
+};Elm.Native.Task = {};
 
 Elm.Native.Task.make = function(localRuntime) {
 	localRuntime.Native = localRuntime.Native || {};
@@ -6257,7 +6233,6 @@ Elm.Native.Task.make = function(localRuntime) {
 		sleep: sleep
 	};
 };
-
 Elm.Result = Elm.Result || {};
 Elm.Result.make = function (_elm) {
    "use strict";
@@ -6358,8 +6333,7 @@ Elm.Result.make = function (_elm) {
                                ,formatError: formatError
                                ,Ok: Ok
                                ,Err: Err};
-};
-Elm.Task = Elm.Task || {};
+};Elm.Task = Elm.Task || {};
 Elm.Task.make = function (_elm) {
    "use strict";
    _elm.Task = _elm.Task || {};
@@ -6450,8 +6424,7 @@ Elm.Task.make = function (_elm) {
                              ,fromResult: fromResult
                              ,spawn: spawn
                              ,sleep: sleep};
-};
-Elm.Signal = Elm.Signal || {};
+};Elm.Signal = Elm.Signal || {};
 Elm.Signal.make = function (_elm) {
    "use strict";
    _elm.Signal = _elm.Signal || {};
@@ -6516,8 +6489,7 @@ Elm.Signal.make = function (_elm) {
                                ,message: message
                                ,forwardTo: forwardTo
                                ,Mailbox: Mailbox};
-};
-Elm.Native.String = {};
+};Elm.Native.String = {};
 
 Elm.Native.String.make = function(localRuntime) {
 	localRuntime.Native = localRuntime.Native || {};
@@ -6858,7 +6830,6 @@ Elm.Native.String.make = function(localRuntime) {
 		fromList: fromList
 	};
 };
-
 Elm.String = Elm.String || {};
 Elm.String.make = function (_elm) {
    "use strict";
@@ -6949,8 +6920,7 @@ Elm.String.make = function (_elm) {
                                ,foldr: foldr
                                ,any: any
                                ,all: all};
-};
-Elm.Dict = Elm.Dict || {};
+};Elm.Dict = Elm.Dict || {};
 Elm.Dict.make = function (_elm) {
    "use strict";
    _elm.Dict = _elm.Dict || {};
@@ -7510,8 +7480,7 @@ Elm.Dict.make = function (_elm) {
                              ,values: values
                              ,toList: toList
                              ,fromList: fromList};
-};
-Elm.Native.Json = {};
+};Elm.Native.Json = {};
 
 Elm.Native.Json.make = function(localRuntime) {
 	localRuntime.Native = localRuntime.Native || {};
@@ -8006,7 +7975,6 @@ Elm.Native.Json.make = function(localRuntime) {
 
 	};
 };
-
 Elm.Json = Elm.Json || {};
 Elm.Json.Encode = Elm.Json.Encode || {};
 Elm.Json.Encode.make = function (_elm) {
@@ -8036,8 +8004,7 @@ Elm.Json.Encode.make = function (_elm) {
                                     ,list: list
                                     ,array: array
                                     ,object: object};
-};
-Elm.Json = Elm.Json || {};
+};Elm.Json = Elm.Json || {};
 Elm.Json.Decode = Elm.Json.Decode || {};
 Elm.Json.Decode.make = function (_elm) {
    "use strict";
@@ -8128,8 +8095,7 @@ Elm.Json.Decode.make = function (_elm) {
                                     ,andThen: andThen
                                     ,value: value
                                     ,customDecoder: customDecoder};
-};
-(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+};(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 
 },{}],2:[function(require,module,exports){
 (function (global){
@@ -9723,7 +9689,6 @@ Elm.Native.VirtualDom.make = function(elm)
 };
 
 },{"virtual-dom/vdom/create-element":6,"virtual-dom/vdom/patch":9,"virtual-dom/vnode/is-vhook":13,"virtual-dom/vnode/vnode":18,"virtual-dom/vnode/vtext":20,"virtual-dom/vtree/diff":22}]},{},[23]);
-
 Elm.VirtualDom = Elm.VirtualDom || {};
 Elm.VirtualDom.make = function (_elm) {
    "use strict";
@@ -9771,8 +9736,7 @@ Elm.VirtualDom.make = function (_elm) {
                                    ,lazy2: lazy2
                                    ,lazy3: lazy3
                                    ,Options: Options};
-};
-Elm.Html = Elm.Html || {};
+};Elm.Html = Elm.Html || {};
 Elm.Html.make = function (_elm) {
    "use strict";
    _elm.Html = _elm.Html || {};
@@ -9994,8 +9958,231 @@ Elm.Html.make = function (_elm) {
                              ,summary: summary
                              ,menuitem: menuitem
                              ,menu: menu};
-};
-Elm.Html = Elm.Html || {};
+};Elm.Html = Elm.Html || {};
+Elm.Html.Attributes = Elm.Html.Attributes || {};
+Elm.Html.Attributes.make = function (_elm) {
+   "use strict";
+   _elm.Html = _elm.Html || {};
+   _elm.Html.Attributes = _elm.Html.Attributes || {};
+   if (_elm.Html.Attributes.values) return _elm.Html.Attributes.values;
+   var _U = Elm.Native.Utils.make(_elm),
+   $Basics = Elm.Basics.make(_elm),
+   $Debug = Elm.Debug.make(_elm),
+   $Html = Elm.Html.make(_elm),
+   $Json$Encode = Elm.Json.Encode.make(_elm),
+   $List = Elm.List.make(_elm),
+   $Maybe = Elm.Maybe.make(_elm),
+   $Result = Elm.Result.make(_elm),
+   $Signal = Elm.Signal.make(_elm),
+   $String = Elm.String.make(_elm),
+   $VirtualDom = Elm.VirtualDom.make(_elm);
+   var _op = {};
+   var attribute = $VirtualDom.attribute;
+   var contextmenu = function (value) {    return A2(attribute,"contextmenu",value);};
+   var property = $VirtualDom.property;
+   var stringProperty = F2(function (name,string) {    return A2(property,name,$Json$Encode.string(string));});
+   var $class = function (name) {    return A2(stringProperty,"className",name);};
+   var id = function (name) {    return A2(stringProperty,"id",name);};
+   var title = function (name) {    return A2(stringProperty,"title",name);};
+   var accesskey = function ($char) {    return A2(stringProperty,"accessKey",$String.fromChar($char));};
+   var dir = function (value) {    return A2(stringProperty,"dir",value);};
+   var draggable = function (value) {    return A2(stringProperty,"draggable",value);};
+   var dropzone = function (value) {    return A2(stringProperty,"dropzone",value);};
+   var itemprop = function (value) {    return A2(stringProperty,"itemprop",value);};
+   var lang = function (value) {    return A2(stringProperty,"lang",value);};
+   var tabindex = function (n) {    return A2(stringProperty,"tabIndex",$Basics.toString(n));};
+   var charset = function (value) {    return A2(stringProperty,"charset",value);};
+   var content = function (value) {    return A2(stringProperty,"content",value);};
+   var httpEquiv = function (value) {    return A2(stringProperty,"httpEquiv",value);};
+   var language = function (value) {    return A2(stringProperty,"language",value);};
+   var src = function (value) {    return A2(stringProperty,"src",value);};
+   var height = function (value) {    return A2(stringProperty,"height",$Basics.toString(value));};
+   var width = function (value) {    return A2(stringProperty,"width",$Basics.toString(value));};
+   var alt = function (value) {    return A2(stringProperty,"alt",value);};
+   var preload = function (value) {    return A2(stringProperty,"preload",value);};
+   var poster = function (value) {    return A2(stringProperty,"poster",value);};
+   var kind = function (value) {    return A2(stringProperty,"kind",value);};
+   var srclang = function (value) {    return A2(stringProperty,"srclang",value);};
+   var sandbox = function (value) {    return A2(stringProperty,"sandbox",value);};
+   var srcdoc = function (value) {    return A2(stringProperty,"srcdoc",value);};
+   var type$ = function (value) {    return A2(stringProperty,"type",value);};
+   var value = function (value) {    return A2(stringProperty,"value",value);};
+   var placeholder = function (value) {    return A2(stringProperty,"placeholder",value);};
+   var accept = function (value) {    return A2(stringProperty,"accept",value);};
+   var acceptCharset = function (value) {    return A2(stringProperty,"acceptCharset",value);};
+   var action = function (value) {    return A2(stringProperty,"action",value);};
+   var autocomplete = function (bool) {    return A2(stringProperty,"autocomplete",bool ? "on" : "off");};
+   var autosave = function (value) {    return A2(stringProperty,"autosave",value);};
+   var enctype = function (value) {    return A2(stringProperty,"enctype",value);};
+   var formaction = function (value) {    return A2(stringProperty,"formAction",value);};
+   var list = function (value) {    return A2(stringProperty,"list",value);};
+   var minlength = function (n) {    return A2(stringProperty,"minLength",$Basics.toString(n));};
+   var maxlength = function (n) {    return A2(stringProperty,"maxLength",$Basics.toString(n));};
+   var method = function (value) {    return A2(stringProperty,"method",value);};
+   var name = function (value) {    return A2(stringProperty,"name",value);};
+   var pattern = function (value) {    return A2(stringProperty,"pattern",value);};
+   var size = function (n) {    return A2(stringProperty,"size",$Basics.toString(n));};
+   var $for = function (value) {    return A2(stringProperty,"htmlFor",value);};
+   var form = function (value) {    return A2(stringProperty,"form",value);};
+   var max = function (value) {    return A2(stringProperty,"max",value);};
+   var min = function (value) {    return A2(stringProperty,"min",value);};
+   var step = function (n) {    return A2(stringProperty,"step",n);};
+   var cols = function (n) {    return A2(stringProperty,"cols",$Basics.toString(n));};
+   var rows = function (n) {    return A2(stringProperty,"rows",$Basics.toString(n));};
+   var wrap = function (value) {    return A2(stringProperty,"wrap",value);};
+   var usemap = function (value) {    return A2(stringProperty,"useMap",value);};
+   var shape = function (value) {    return A2(stringProperty,"shape",value);};
+   var coords = function (value) {    return A2(stringProperty,"coords",value);};
+   var challenge = function (value) {    return A2(stringProperty,"challenge",value);};
+   var keytype = function (value) {    return A2(stringProperty,"keytype",value);};
+   var align = function (value) {    return A2(stringProperty,"align",value);};
+   var cite = function (value) {    return A2(stringProperty,"cite",value);};
+   var href = function (value) {    return A2(stringProperty,"href",value);};
+   var target = function (value) {    return A2(stringProperty,"target",value);};
+   var downloadAs = function (value) {    return A2(stringProperty,"download",value);};
+   var hreflang = function (value) {    return A2(stringProperty,"hreflang",value);};
+   var media = function (value) {    return A2(stringProperty,"media",value);};
+   var ping = function (value) {    return A2(stringProperty,"ping",value);};
+   var rel = function (value) {    return A2(stringProperty,"rel",value);};
+   var datetime = function (value) {    return A2(stringProperty,"datetime",value);};
+   var pubdate = function (value) {    return A2(stringProperty,"pubdate",value);};
+   var start = function (n) {    return A2(stringProperty,"start",$Basics.toString(n));};
+   var colspan = function (n) {    return A2(stringProperty,"colSpan",$Basics.toString(n));};
+   var headers = function (value) {    return A2(stringProperty,"headers",value);};
+   var rowspan = function (n) {    return A2(stringProperty,"rowSpan",$Basics.toString(n));};
+   var scope = function (value) {    return A2(stringProperty,"scope",value);};
+   var manifest = function (value) {    return A2(stringProperty,"manifest",value);};
+   var boolProperty = F2(function (name,bool) {    return A2(property,name,$Json$Encode.bool(bool));});
+   var hidden = function (bool) {    return A2(boolProperty,"hidden",bool);};
+   var contenteditable = function (bool) {    return A2(boolProperty,"contentEditable",bool);};
+   var spellcheck = function (bool) {    return A2(boolProperty,"spellcheck",bool);};
+   var async = function (bool) {    return A2(boolProperty,"async",bool);};
+   var defer = function (bool) {    return A2(boolProperty,"defer",bool);};
+   var scoped = function (bool) {    return A2(boolProperty,"scoped",bool);};
+   var autoplay = function (bool) {    return A2(boolProperty,"autoplay",bool);};
+   var controls = function (bool) {    return A2(boolProperty,"controls",bool);};
+   var loop = function (bool) {    return A2(boolProperty,"loop",bool);};
+   var $default = function (bool) {    return A2(boolProperty,"default",bool);};
+   var seamless = function (bool) {    return A2(boolProperty,"seamless",bool);};
+   var checked = function (bool) {    return A2(boolProperty,"checked",bool);};
+   var selected = function (bool) {    return A2(boolProperty,"selected",bool);};
+   var autofocus = function (bool) {    return A2(boolProperty,"autofocus",bool);};
+   var disabled = function (bool) {    return A2(boolProperty,"disabled",bool);};
+   var multiple = function (bool) {    return A2(boolProperty,"multiple",bool);};
+   var novalidate = function (bool) {    return A2(boolProperty,"noValidate",bool);};
+   var readonly = function (bool) {    return A2(boolProperty,"readOnly",bool);};
+   var required = function (bool) {    return A2(boolProperty,"required",bool);};
+   var ismap = function (value) {    return A2(boolProperty,"isMap",value);};
+   var download = function (bool) {    return A2(boolProperty,"download",bool);};
+   var reversed = function (bool) {    return A2(boolProperty,"reversed",bool);};
+   var classList = function (list) {    return $class(A2($String.join," ",A2($List.map,$Basics.fst,A2($List.filter,$Basics.snd,list))));};
+   var style = function (props) {
+      return A2(property,
+      "style",
+      $Json$Encode.object(A2($List.map,function (_p0) {    var _p1 = _p0;return {ctor: "_Tuple2",_0: _p1._0,_1: $Json$Encode.string(_p1._1)};},props)));
+   };
+   var key = function (k) {    return A2(stringProperty,"key",k);};
+   return _elm.Html.Attributes.values = {_op: _op
+                                        ,key: key
+                                        ,style: style
+                                        ,$class: $class
+                                        ,classList: classList
+                                        ,id: id
+                                        ,title: title
+                                        ,hidden: hidden
+                                        ,type$: type$
+                                        ,value: value
+                                        ,checked: checked
+                                        ,placeholder: placeholder
+                                        ,selected: selected
+                                        ,accept: accept
+                                        ,acceptCharset: acceptCharset
+                                        ,action: action
+                                        ,autocomplete: autocomplete
+                                        ,autofocus: autofocus
+                                        ,autosave: autosave
+                                        ,disabled: disabled
+                                        ,enctype: enctype
+                                        ,formaction: formaction
+                                        ,list: list
+                                        ,maxlength: maxlength
+                                        ,minlength: minlength
+                                        ,method: method
+                                        ,multiple: multiple
+                                        ,name: name
+                                        ,novalidate: novalidate
+                                        ,pattern: pattern
+                                        ,readonly: readonly
+                                        ,required: required
+                                        ,size: size
+                                        ,$for: $for
+                                        ,form: form
+                                        ,max: max
+                                        ,min: min
+                                        ,step: step
+                                        ,cols: cols
+                                        ,rows: rows
+                                        ,wrap: wrap
+                                        ,href: href
+                                        ,target: target
+                                        ,download: download
+                                        ,downloadAs: downloadAs
+                                        ,hreflang: hreflang
+                                        ,media: media
+                                        ,ping: ping
+                                        ,rel: rel
+                                        ,ismap: ismap
+                                        ,usemap: usemap
+                                        ,shape: shape
+                                        ,coords: coords
+                                        ,src: src
+                                        ,height: height
+                                        ,width: width
+                                        ,alt: alt
+                                        ,autoplay: autoplay
+                                        ,controls: controls
+                                        ,loop: loop
+                                        ,preload: preload
+                                        ,poster: poster
+                                        ,$default: $default
+                                        ,kind: kind
+                                        ,srclang: srclang
+                                        ,sandbox: sandbox
+                                        ,seamless: seamless
+                                        ,srcdoc: srcdoc
+                                        ,reversed: reversed
+                                        ,start: start
+                                        ,align: align
+                                        ,colspan: colspan
+                                        ,rowspan: rowspan
+                                        ,headers: headers
+                                        ,scope: scope
+                                        ,async: async
+                                        ,charset: charset
+                                        ,content: content
+                                        ,defer: defer
+                                        ,httpEquiv: httpEquiv
+                                        ,language: language
+                                        ,scoped: scoped
+                                        ,accesskey: accesskey
+                                        ,contenteditable: contenteditable
+                                        ,contextmenu: contextmenu
+                                        ,dir: dir
+                                        ,draggable: draggable
+                                        ,dropzone: dropzone
+                                        ,itemprop: itemprop
+                                        ,lang: lang
+                                        ,spellcheck: spellcheck
+                                        ,tabindex: tabindex
+                                        ,challenge: challenge
+                                        ,keytype: keytype
+                                        ,cite: cite
+                                        ,datetime: datetime
+                                        ,pubdate: pubdate
+                                        ,manifest: manifest
+                                        ,property: property
+                                        ,attribute: attribute};
+};Elm.Html = Elm.Html || {};
 Elm.Html.Events = Elm.Html.Events || {};
 Elm.Html.Events.make = function (_elm) {
    "use strict";
@@ -10060,716 +10247,7 @@ Elm.Html.Events.make = function (_elm) {
                                     ,targetChecked: targetChecked
                                     ,keyCode: keyCode
                                     ,Options: Options};
-};
-Elm.Svg = Elm.Svg || {};
-Elm.Svg.make = function (_elm) {
-   "use strict";
-   _elm.Svg = _elm.Svg || {};
-   if (_elm.Svg.values) return _elm.Svg.values;
-   var _U = Elm.Native.Utils.make(_elm),
-   $Basics = Elm.Basics.make(_elm),
-   $Debug = Elm.Debug.make(_elm),
-   $Html = Elm.Html.make(_elm),
-   $Json$Encode = Elm.Json.Encode.make(_elm),
-   $List = Elm.List.make(_elm),
-   $Maybe = Elm.Maybe.make(_elm),
-   $Result = Elm.Result.make(_elm),
-   $Signal = Elm.Signal.make(_elm),
-   $VirtualDom = Elm.VirtualDom.make(_elm);
-   var _op = {};
-   var text = $VirtualDom.text;
-   var svgNamespace = A2($VirtualDom.property,"namespace",$Json$Encode.string("http://www.w3.org/2000/svg"));
-   var node = F3(function (name,attributes,children) {    return A3($VirtualDom.node,name,A2($List._op["::"],svgNamespace,attributes),children);});
-   var svg = node("svg");
-   var foreignObject = node("foreignObject");
-   var animate = node("animate");
-   var animateColor = node("animateColor");
-   var animateMotion = node("animateMotion");
-   var animateTransform = node("animateTransform");
-   var mpath = node("mpath");
-   var set = node("set");
-   var a = node("a");
-   var defs = node("defs");
-   var g = node("g");
-   var marker = node("marker");
-   var mask = node("mask");
-   var missingGlyph = node("missingGlyph");
-   var pattern = node("pattern");
-   var $switch = node("switch");
-   var symbol = node("symbol");
-   var desc = node("desc");
-   var metadata = node("metadata");
-   var title = node("title");
-   var feBlend = node("feBlend");
-   var feColorMatrix = node("feColorMatrix");
-   var feComponentTransfer = node("feComponentTransfer");
-   var feComposite = node("feComposite");
-   var feConvolveMatrix = node("feConvolveMatrix");
-   var feDiffuseLighting = node("feDiffuseLighting");
-   var feDisplacementMap = node("feDisplacementMap");
-   var feFlood = node("feFlood");
-   var feFuncA = node("feFuncA");
-   var feFuncB = node("feFuncB");
-   var feFuncG = node("feFuncG");
-   var feFuncR = node("feFuncR");
-   var feGaussianBlur = node("feGaussianBlur");
-   var feImage = node("feImage");
-   var feMerge = node("feMerge");
-   var feMergeNode = node("feMergeNode");
-   var feMorphology = node("feMorphology");
-   var feOffset = node("feOffset");
-   var feSpecularLighting = node("feSpecularLighting");
-   var feTile = node("feTile");
-   var feTurbulence = node("feTurbulence");
-   var font = node("font");
-   var fontFace = node("fontFace");
-   var fontFaceFormat = node("fontFaceFormat");
-   var fontFaceName = node("fontFaceName");
-   var fontFaceSrc = node("fontFaceSrc");
-   var fontFaceUri = node("fontFaceUri");
-   var hkern = node("hkern");
-   var vkern = node("vkern");
-   var linearGradient = node("linearGradient");
-   var radialGradient = node("radialGradient");
-   var stop = node("stop");
-   var circle = node("circle");
-   var ellipse = node("ellipse");
-   var image = node("image");
-   var line = node("line");
-   var path = node("path");
-   var polygon = node("polygon");
-   var polyline = node("polyline");
-   var rect = node("rect");
-   var use = node("use");
-   var feDistantLight = node("feDistantLight");
-   var fePointLight = node("fePointLight");
-   var feSpotLight = node("feSpotLight");
-   var altGlyph = node("altGlyph");
-   var altGlyphDef = node("altGlyphDef");
-   var altGlyphItem = node("altGlyphItem");
-   var glyph = node("glyph");
-   var glyphRef = node("glyphRef");
-   var textPath = node("textPath");
-   var text$ = node("text");
-   var tref = node("tref");
-   var tspan = node("tspan");
-   var clipPath = node("clipPath");
-   var colorProfile = node("colorProfile");
-   var cursor = node("cursor");
-   var filter = node("filter");
-   var script = node("script");
-   var style = node("style");
-   var view = node("view");
-   return _elm.Svg.values = {_op: _op
-                            ,text: text
-                            ,node: node
-                            ,svg: svg
-                            ,foreignObject: foreignObject
-                            ,circle: circle
-                            ,ellipse: ellipse
-                            ,image: image
-                            ,line: line
-                            ,path: path
-                            ,polygon: polygon
-                            ,polyline: polyline
-                            ,rect: rect
-                            ,use: use
-                            ,animate: animate
-                            ,animateColor: animateColor
-                            ,animateMotion: animateMotion
-                            ,animateTransform: animateTransform
-                            ,mpath: mpath
-                            ,set: set
-                            ,desc: desc
-                            ,metadata: metadata
-                            ,title: title
-                            ,a: a
-                            ,defs: defs
-                            ,g: g
-                            ,marker: marker
-                            ,mask: mask
-                            ,missingGlyph: missingGlyph
-                            ,pattern: pattern
-                            ,$switch: $switch
-                            ,symbol: symbol
-                            ,altGlyph: altGlyph
-                            ,altGlyphDef: altGlyphDef
-                            ,altGlyphItem: altGlyphItem
-                            ,glyph: glyph
-                            ,glyphRef: glyphRef
-                            ,textPath: textPath
-                            ,text$: text$
-                            ,tref: tref
-                            ,tspan: tspan
-                            ,font: font
-                            ,fontFace: fontFace
-                            ,fontFaceFormat: fontFaceFormat
-                            ,fontFaceName: fontFaceName
-                            ,fontFaceSrc: fontFaceSrc
-                            ,fontFaceUri: fontFaceUri
-                            ,hkern: hkern
-                            ,vkern: vkern
-                            ,linearGradient: linearGradient
-                            ,radialGradient: radialGradient
-                            ,stop: stop
-                            ,feBlend: feBlend
-                            ,feColorMatrix: feColorMatrix
-                            ,feComponentTransfer: feComponentTransfer
-                            ,feComposite: feComposite
-                            ,feConvolveMatrix: feConvolveMatrix
-                            ,feDiffuseLighting: feDiffuseLighting
-                            ,feDisplacementMap: feDisplacementMap
-                            ,feFlood: feFlood
-                            ,feFuncA: feFuncA
-                            ,feFuncB: feFuncB
-                            ,feFuncG: feFuncG
-                            ,feFuncR: feFuncR
-                            ,feGaussianBlur: feGaussianBlur
-                            ,feImage: feImage
-                            ,feMerge: feMerge
-                            ,feMergeNode: feMergeNode
-                            ,feMorphology: feMorphology
-                            ,feOffset: feOffset
-                            ,feSpecularLighting: feSpecularLighting
-                            ,feTile: feTile
-                            ,feTurbulence: feTurbulence
-                            ,feDistantLight: feDistantLight
-                            ,fePointLight: fePointLight
-                            ,feSpotLight: feSpotLight
-                            ,clipPath: clipPath
-                            ,colorProfile: colorProfile
-                            ,cursor: cursor
-                            ,filter: filter
-                            ,script: script
-                            ,style: style
-                            ,view: view};
-};
-Elm.Svg = Elm.Svg || {};
-Elm.Svg.Attributes = Elm.Svg.Attributes || {};
-Elm.Svg.Attributes.make = function (_elm) {
-   "use strict";
-   _elm.Svg = _elm.Svg || {};
-   _elm.Svg.Attributes = _elm.Svg.Attributes || {};
-   if (_elm.Svg.Attributes.values) return _elm.Svg.Attributes.values;
-   var _U = Elm.Native.Utils.make(_elm),
-   $Basics = Elm.Basics.make(_elm),
-   $Debug = Elm.Debug.make(_elm),
-   $List = Elm.List.make(_elm),
-   $Maybe = Elm.Maybe.make(_elm),
-   $Result = Elm.Result.make(_elm),
-   $Signal = Elm.Signal.make(_elm),
-   $Svg = Elm.Svg.make(_elm),
-   $VirtualDom = Elm.VirtualDom.make(_elm);
-   var _op = {};
-   var writingMode = $VirtualDom.attribute("writing-mode");
-   var wordSpacing = $VirtualDom.attribute("word-spacing");
-   var visibility = $VirtualDom.attribute("visibility");
-   var unicodeBidi = $VirtualDom.attribute("unicode-bidi");
-   var textRendering = $VirtualDom.attribute("text-rendering");
-   var textDecoration = $VirtualDom.attribute("text-decoration");
-   var textAnchor = $VirtualDom.attribute("text-anchor");
-   var stroke = $VirtualDom.attribute("stroke");
-   var strokeWidth = $VirtualDom.attribute("stroke-width");
-   var strokeOpacity = $VirtualDom.attribute("stroke-opacity");
-   var strokeMiterlimit = $VirtualDom.attribute("stroke-miterlimit");
-   var strokeLinejoin = $VirtualDom.attribute("stroke-linejoin");
-   var strokeLinecap = $VirtualDom.attribute("stroke-linecap");
-   var strokeDashoffset = $VirtualDom.attribute("stroke-dashoffset");
-   var strokeDasharray = $VirtualDom.attribute("stroke-dasharray");
-   var stopOpacity = $VirtualDom.attribute("stop-opacity");
-   var stopColor = $VirtualDom.attribute("stop-color");
-   var shapeRendering = $VirtualDom.attribute("shape-rendering");
-   var pointerEvents = $VirtualDom.attribute("pointer-events");
-   var overflow = $VirtualDom.attribute("overflow");
-   var opacity = $VirtualDom.attribute("opacity");
-   var mask = $VirtualDom.attribute("mask");
-   var markerStart = $VirtualDom.attribute("marker-start");
-   var markerMid = $VirtualDom.attribute("marker-mid");
-   var markerEnd = $VirtualDom.attribute("marker-end");
-   var lightingColor = $VirtualDom.attribute("lighting-color");
-   var letterSpacing = $VirtualDom.attribute("letter-spacing");
-   var kerning = $VirtualDom.attribute("kerning");
-   var imageRendering = $VirtualDom.attribute("image-rendering");
-   var glyphOrientationVertical = $VirtualDom.attribute("glyph-orientation-vertical");
-   var glyphOrientationHorizontal = $VirtualDom.attribute("glyph-orientation-horizontal");
-   var fontWeight = $VirtualDom.attribute("font-weight");
-   var fontVariant = $VirtualDom.attribute("font-variant");
-   var fontStyle = $VirtualDom.attribute("font-style");
-   var fontStretch = $VirtualDom.attribute("font-stretch");
-   var fontSize = $VirtualDom.attribute("font-size");
-   var fontSizeAdjust = $VirtualDom.attribute("font-size-adjust");
-   var fontFamily = $VirtualDom.attribute("font-family");
-   var floodOpacity = $VirtualDom.attribute("flood-opacity");
-   var floodColor = $VirtualDom.attribute("flood-color");
-   var filter = $VirtualDom.attribute("filter");
-   var fill = $VirtualDom.attribute("fill");
-   var fillRule = $VirtualDom.attribute("fill-rule");
-   var fillOpacity = $VirtualDom.attribute("fill-opacity");
-   var enableBackground = $VirtualDom.attribute("enable-background");
-   var dominantBaseline = $VirtualDom.attribute("dominant-baseline");
-   var display = $VirtualDom.attribute("display");
-   var direction = $VirtualDom.attribute("direction");
-   var cursor = $VirtualDom.attribute("cursor");
-   var color = $VirtualDom.attribute("color");
-   var colorRendering = $VirtualDom.attribute("color-rendering");
-   var colorProfile = $VirtualDom.attribute("color-profile");
-   var colorInterpolation = $VirtualDom.attribute("color-interpolation");
-   var colorInterpolationFilters = $VirtualDom.attribute("color-interpolation-filters");
-   var clip = $VirtualDom.attribute("clip");
-   var clipRule = $VirtualDom.attribute("clip-rule");
-   var clipPath = $VirtualDom.attribute("clip-path");
-   var baselineShift = $VirtualDom.attribute("baseline-shift");
-   var alignmentBaseline = $VirtualDom.attribute("alignment-baseline");
-   var zoomAndPan = $VirtualDom.attribute("zoomAndPan");
-   var z = $VirtualDom.attribute("z");
-   var yChannelSelector = $VirtualDom.attribute("yChannelSelector");
-   var y2 = $VirtualDom.attribute("y2");
-   var y1 = $VirtualDom.attribute("y1");
-   var y = $VirtualDom.attribute("y");
-   var xmlSpace = A2($VirtualDom.attributeNS,"http://www.w3.org/XML/1998/namespace","xml:space");
-   var xmlLang = A2($VirtualDom.attributeNS,"http://www.w3.org/XML/1998/namespace","xml:lang");
-   var xmlBase = A2($VirtualDom.attributeNS,"http://www.w3.org/XML/1998/namespace","xml:base");
-   var xlinkType = A2($VirtualDom.attributeNS,"http://www.w3.org/1999/xlink","xlink:type");
-   var xlinkTitle = A2($VirtualDom.attributeNS,"http://www.w3.org/1999/xlink","xlink:title");
-   var xlinkShow = A2($VirtualDom.attributeNS,"http://www.w3.org/1999/xlink","xlink:show");
-   var xlinkRole = A2($VirtualDom.attributeNS,"http://www.w3.org/1999/xlink","xlink:role");
-   var xlinkHref = A2($VirtualDom.attributeNS,"http://www.w3.org/1999/xlink","xlink:href");
-   var xlinkArcrole = A2($VirtualDom.attributeNS,"http://www.w3.org/1999/xlink","xlink:arcrole");
-   var xlinkActuate = A2($VirtualDom.attributeNS,"http://www.w3.org/1999/xlink","xlink:actuate");
-   var xChannelSelector = $VirtualDom.attribute("xChannelSelector");
-   var x2 = $VirtualDom.attribute("x2");
-   var x1 = $VirtualDom.attribute("x1");
-   var xHeight = $VirtualDom.attribute("x-height");
-   var x = $VirtualDom.attribute("x");
-   var widths = $VirtualDom.attribute("widths");
-   var width = $VirtualDom.attribute("width");
-   var viewTarget = $VirtualDom.attribute("viewTarget");
-   var viewBox = $VirtualDom.attribute("viewBox");
-   var vertOriginY = $VirtualDom.attribute("vert-origin-y");
-   var vertOriginX = $VirtualDom.attribute("vert-origin-x");
-   var vertAdvY = $VirtualDom.attribute("vert-adv-y");
-   var version = $VirtualDom.attribute("version");
-   var values = $VirtualDom.attribute("values");
-   var vMathematical = $VirtualDom.attribute("v-mathematical");
-   var vIdeographic = $VirtualDom.attribute("v-ideographic");
-   var vHanging = $VirtualDom.attribute("v-hanging");
-   var vAlphabetic = $VirtualDom.attribute("v-alphabetic");
-   var unitsPerEm = $VirtualDom.attribute("units-per-em");
-   var unicodeRange = $VirtualDom.attribute("unicode-range");
-   var unicode = $VirtualDom.attribute("unicode");
-   var underlineThickness = $VirtualDom.attribute("underline-thickness");
-   var underlinePosition = $VirtualDom.attribute("underline-position");
-   var u2 = $VirtualDom.attribute("u2");
-   var u1 = $VirtualDom.attribute("u1");
-   var type$ = $VirtualDom.attribute("type");
-   var transform = $VirtualDom.attribute("transform");
-   var to = $VirtualDom.attribute("to");
-   var title = $VirtualDom.attribute("title");
-   var textLength = $VirtualDom.attribute("textLength");
-   var targetY = $VirtualDom.attribute("targetY");
-   var targetX = $VirtualDom.attribute("targetX");
-   var target = $VirtualDom.attribute("target");
-   var tableValues = $VirtualDom.attribute("tableValues");
-   var systemLanguage = $VirtualDom.attribute("systemLanguage");
-   var surfaceScale = $VirtualDom.attribute("surfaceScale");
-   var style = $VirtualDom.attribute("style");
-   var string = $VirtualDom.attribute("string");
-   var strikethroughThickness = $VirtualDom.attribute("strikethrough-thickness");
-   var strikethroughPosition = $VirtualDom.attribute("strikethrough-position");
-   var stitchTiles = $VirtualDom.attribute("stitchTiles");
-   var stemv = $VirtualDom.attribute("stemv");
-   var stemh = $VirtualDom.attribute("stemh");
-   var stdDeviation = $VirtualDom.attribute("stdDeviation");
-   var startOffset = $VirtualDom.attribute("startOffset");
-   var spreadMethod = $VirtualDom.attribute("spreadMethod");
-   var speed = $VirtualDom.attribute("speed");
-   var specularExponent = $VirtualDom.attribute("specularExponent");
-   var specularConstant = $VirtualDom.attribute("specularConstant");
-   var spacing = $VirtualDom.attribute("spacing");
-   var slope = $VirtualDom.attribute("slope");
-   var seed = $VirtualDom.attribute("seed");
-   var scale = $VirtualDom.attribute("scale");
-   var ry = $VirtualDom.attribute("ry");
-   var rx = $VirtualDom.attribute("rx");
-   var rotate = $VirtualDom.attribute("rotate");
-   var result = $VirtualDom.attribute("result");
-   var restart = $VirtualDom.attribute("restart");
-   var requiredFeatures = $VirtualDom.attribute("requiredFeatures");
-   var requiredExtensions = $VirtualDom.attribute("requiredExtensions");
-   var repeatDur = $VirtualDom.attribute("repeatDur");
-   var repeatCount = $VirtualDom.attribute("repeatCount");
-   var renderingIntent = $VirtualDom.attribute("rendering-intent");
-   var refY = $VirtualDom.attribute("refY");
-   var refX = $VirtualDom.attribute("refX");
-   var radius = $VirtualDom.attribute("radius");
-   var r = $VirtualDom.attribute("r");
-   var primitiveUnits = $VirtualDom.attribute("primitiveUnits");
-   var preserveAspectRatio = $VirtualDom.attribute("preserveAspectRatio");
-   var preserveAlpha = $VirtualDom.attribute("preserveAlpha");
-   var pointsAtZ = $VirtualDom.attribute("pointsAtZ");
-   var pointsAtY = $VirtualDom.attribute("pointsAtY");
-   var pointsAtX = $VirtualDom.attribute("pointsAtX");
-   var points = $VirtualDom.attribute("points");
-   var pointOrder = $VirtualDom.attribute("point-order");
-   var patternUnits = $VirtualDom.attribute("patternUnits");
-   var patternTransform = $VirtualDom.attribute("patternTransform");
-   var patternContentUnits = $VirtualDom.attribute("patternContentUnits");
-   var pathLength = $VirtualDom.attribute("pathLength");
-   var path = $VirtualDom.attribute("path");
-   var panose1 = $VirtualDom.attribute("panose-1");
-   var overlineThickness = $VirtualDom.attribute("overline-thickness");
-   var overlinePosition = $VirtualDom.attribute("overline-position");
-   var origin = $VirtualDom.attribute("origin");
-   var orientation = $VirtualDom.attribute("orientation");
-   var orient = $VirtualDom.attribute("orient");
-   var order = $VirtualDom.attribute("order");
-   var operator = $VirtualDom.attribute("operator");
-   var offset = $VirtualDom.attribute("offset");
-   var numOctaves = $VirtualDom.attribute("numOctaves");
-   var name = $VirtualDom.attribute("name");
-   var mode = $VirtualDom.attribute("mode");
-   var min = $VirtualDom.attribute("min");
-   var method = $VirtualDom.attribute("method");
-   var media = $VirtualDom.attribute("media");
-   var max = $VirtualDom.attribute("max");
-   var mathematical = $VirtualDom.attribute("mathematical");
-   var maskUnits = $VirtualDom.attribute("maskUnits");
-   var maskContentUnits = $VirtualDom.attribute("maskContentUnits");
-   var markerWidth = $VirtualDom.attribute("markerWidth");
-   var markerUnits = $VirtualDom.attribute("markerUnits");
-   var markerHeight = $VirtualDom.attribute("markerHeight");
-   var local = $VirtualDom.attribute("local");
-   var limitingConeAngle = $VirtualDom.attribute("limitingConeAngle");
-   var lengthAdjust = $VirtualDom.attribute("lengthAdjust");
-   var lang = $VirtualDom.attribute("lang");
-   var keyTimes = $VirtualDom.attribute("keyTimes");
-   var keySplines = $VirtualDom.attribute("keySplines");
-   var keyPoints = $VirtualDom.attribute("keyPoints");
-   var kernelUnitLength = $VirtualDom.attribute("kernelUnitLength");
-   var kernelMatrix = $VirtualDom.attribute("kernelMatrix");
-   var k4 = $VirtualDom.attribute("k4");
-   var k3 = $VirtualDom.attribute("k3");
-   var k2 = $VirtualDom.attribute("k2");
-   var k1 = $VirtualDom.attribute("k1");
-   var k = $VirtualDom.attribute("k");
-   var intercept = $VirtualDom.attribute("intercept");
-   var in2 = $VirtualDom.attribute("in2");
-   var in$ = $VirtualDom.attribute("in");
-   var ideographic = $VirtualDom.attribute("ideographic");
-   var id = $VirtualDom.attribute("id");
-   var horizOriginY = $VirtualDom.attribute("horiz-origin-y");
-   var horizOriginX = $VirtualDom.attribute("horiz-origin-x");
-   var horizAdvX = $VirtualDom.attribute("horiz-adv-x");
-   var height = $VirtualDom.attribute("height");
-   var hanging = $VirtualDom.attribute("hanging");
-   var gradientUnits = $VirtualDom.attribute("gradientUnits");
-   var gradientTransform = $VirtualDom.attribute("gradientTransform");
-   var glyphRef = $VirtualDom.attribute("glyphRef");
-   var glyphName = $VirtualDom.attribute("glyph-name");
-   var g2 = $VirtualDom.attribute("g2");
-   var g1 = $VirtualDom.attribute("g1");
-   var fy = $VirtualDom.attribute("fy");
-   var fx = $VirtualDom.attribute("fx");
-   var from = $VirtualDom.attribute("from");
-   var format = $VirtualDom.attribute("format");
-   var filterUnits = $VirtualDom.attribute("filterUnits");
-   var filterRes = $VirtualDom.attribute("filterRes");
-   var externalResourcesRequired = $VirtualDom.attribute("externalResourcesRequired");
-   var exponent = $VirtualDom.attribute("exponent");
-   var end = $VirtualDom.attribute("end");
-   var elevation = $VirtualDom.attribute("elevation");
-   var edgeMode = $VirtualDom.attribute("edgeMode");
-   var dy = $VirtualDom.attribute("dy");
-   var dx = $VirtualDom.attribute("dx");
-   var dur = $VirtualDom.attribute("dur");
-   var divisor = $VirtualDom.attribute("divisor");
-   var diffuseConstant = $VirtualDom.attribute("diffuseConstant");
-   var descent = $VirtualDom.attribute("descent");
-   var decelerate = $VirtualDom.attribute("decelerate");
-   var d = $VirtualDom.attribute("d");
-   var cy = $VirtualDom.attribute("cy");
-   var cx = $VirtualDom.attribute("cx");
-   var contentStyleType = $VirtualDom.attribute("contentStyleType");
-   var contentScriptType = $VirtualDom.attribute("contentScriptType");
-   var clipPathUnits = $VirtualDom.attribute("clipPathUnits");
-   var $class = $VirtualDom.attribute("class");
-   var capHeight = $VirtualDom.attribute("cap-height");
-   var calcMode = $VirtualDom.attribute("calcMode");
-   var by = $VirtualDom.attribute("by");
-   var bias = $VirtualDom.attribute("bias");
-   var begin = $VirtualDom.attribute("begin");
-   var bbox = $VirtualDom.attribute("bbox");
-   var baseProfile = $VirtualDom.attribute("baseProfile");
-   var baseFrequency = $VirtualDom.attribute("baseFrequency");
-   var azimuth = $VirtualDom.attribute("azimuth");
-   var autoReverse = $VirtualDom.attribute("autoReverse");
-   var attributeType = $VirtualDom.attribute("attributeType");
-   var attributeName = $VirtualDom.attribute("attributeName");
-   var ascent = $VirtualDom.attribute("ascent");
-   var arabicForm = $VirtualDom.attribute("arabic-form");
-   var amplitude = $VirtualDom.attribute("amplitude");
-   var allowReorder = $VirtualDom.attribute("allowReorder");
-   var alphabetic = $VirtualDom.attribute("alphabetic");
-   var additive = $VirtualDom.attribute("additive");
-   var accumulate = $VirtualDom.attribute("accumulate");
-   var accelerate = $VirtualDom.attribute("accelerate");
-   var accentHeight = $VirtualDom.attribute("accent-height");
-   return _elm.Svg.Attributes.values = {_op: _op
-                                       ,accentHeight: accentHeight
-                                       ,accelerate: accelerate
-                                       ,accumulate: accumulate
-                                       ,additive: additive
-                                       ,alphabetic: alphabetic
-                                       ,allowReorder: allowReorder
-                                       ,amplitude: amplitude
-                                       ,arabicForm: arabicForm
-                                       ,ascent: ascent
-                                       ,attributeName: attributeName
-                                       ,attributeType: attributeType
-                                       ,autoReverse: autoReverse
-                                       ,azimuth: azimuth
-                                       ,baseFrequency: baseFrequency
-                                       ,baseProfile: baseProfile
-                                       ,bbox: bbox
-                                       ,begin: begin
-                                       ,bias: bias
-                                       ,by: by
-                                       ,calcMode: calcMode
-                                       ,capHeight: capHeight
-                                       ,$class: $class
-                                       ,clipPathUnits: clipPathUnits
-                                       ,contentScriptType: contentScriptType
-                                       ,contentStyleType: contentStyleType
-                                       ,cx: cx
-                                       ,cy: cy
-                                       ,d: d
-                                       ,decelerate: decelerate
-                                       ,descent: descent
-                                       ,diffuseConstant: diffuseConstant
-                                       ,divisor: divisor
-                                       ,dur: dur
-                                       ,dx: dx
-                                       ,dy: dy
-                                       ,edgeMode: edgeMode
-                                       ,elevation: elevation
-                                       ,end: end
-                                       ,exponent: exponent
-                                       ,externalResourcesRequired: externalResourcesRequired
-                                       ,filterRes: filterRes
-                                       ,filterUnits: filterUnits
-                                       ,format: format
-                                       ,from: from
-                                       ,fx: fx
-                                       ,fy: fy
-                                       ,g1: g1
-                                       ,g2: g2
-                                       ,glyphName: glyphName
-                                       ,glyphRef: glyphRef
-                                       ,gradientTransform: gradientTransform
-                                       ,gradientUnits: gradientUnits
-                                       ,hanging: hanging
-                                       ,height: height
-                                       ,horizAdvX: horizAdvX
-                                       ,horizOriginX: horizOriginX
-                                       ,horizOriginY: horizOriginY
-                                       ,id: id
-                                       ,ideographic: ideographic
-                                       ,in$: in$
-                                       ,in2: in2
-                                       ,intercept: intercept
-                                       ,k: k
-                                       ,k1: k1
-                                       ,k2: k2
-                                       ,k3: k3
-                                       ,k4: k4
-                                       ,kernelMatrix: kernelMatrix
-                                       ,kernelUnitLength: kernelUnitLength
-                                       ,keyPoints: keyPoints
-                                       ,keySplines: keySplines
-                                       ,keyTimes: keyTimes
-                                       ,lang: lang
-                                       ,lengthAdjust: lengthAdjust
-                                       ,limitingConeAngle: limitingConeAngle
-                                       ,local: local
-                                       ,markerHeight: markerHeight
-                                       ,markerUnits: markerUnits
-                                       ,markerWidth: markerWidth
-                                       ,maskContentUnits: maskContentUnits
-                                       ,maskUnits: maskUnits
-                                       ,mathematical: mathematical
-                                       ,max: max
-                                       ,media: media
-                                       ,method: method
-                                       ,min: min
-                                       ,mode: mode
-                                       ,name: name
-                                       ,numOctaves: numOctaves
-                                       ,offset: offset
-                                       ,operator: operator
-                                       ,order: order
-                                       ,orient: orient
-                                       ,orientation: orientation
-                                       ,origin: origin
-                                       ,overlinePosition: overlinePosition
-                                       ,overlineThickness: overlineThickness
-                                       ,panose1: panose1
-                                       ,path: path
-                                       ,pathLength: pathLength
-                                       ,patternContentUnits: patternContentUnits
-                                       ,patternTransform: patternTransform
-                                       ,patternUnits: patternUnits
-                                       ,pointOrder: pointOrder
-                                       ,points: points
-                                       ,pointsAtX: pointsAtX
-                                       ,pointsAtY: pointsAtY
-                                       ,pointsAtZ: pointsAtZ
-                                       ,preserveAlpha: preserveAlpha
-                                       ,preserveAspectRatio: preserveAspectRatio
-                                       ,primitiveUnits: primitiveUnits
-                                       ,r: r
-                                       ,radius: radius
-                                       ,refX: refX
-                                       ,refY: refY
-                                       ,renderingIntent: renderingIntent
-                                       ,repeatCount: repeatCount
-                                       ,repeatDur: repeatDur
-                                       ,requiredExtensions: requiredExtensions
-                                       ,requiredFeatures: requiredFeatures
-                                       ,restart: restart
-                                       ,result: result
-                                       ,rotate: rotate
-                                       ,rx: rx
-                                       ,ry: ry
-                                       ,scale: scale
-                                       ,seed: seed
-                                       ,slope: slope
-                                       ,spacing: spacing
-                                       ,specularConstant: specularConstant
-                                       ,specularExponent: specularExponent
-                                       ,speed: speed
-                                       ,spreadMethod: spreadMethod
-                                       ,startOffset: startOffset
-                                       ,stdDeviation: stdDeviation
-                                       ,stemh: stemh
-                                       ,stemv: stemv
-                                       ,stitchTiles: stitchTiles
-                                       ,strikethroughPosition: strikethroughPosition
-                                       ,strikethroughThickness: strikethroughThickness
-                                       ,string: string
-                                       ,style: style
-                                       ,surfaceScale: surfaceScale
-                                       ,systemLanguage: systemLanguage
-                                       ,tableValues: tableValues
-                                       ,target: target
-                                       ,targetX: targetX
-                                       ,targetY: targetY
-                                       ,textLength: textLength
-                                       ,title: title
-                                       ,to: to
-                                       ,transform: transform
-                                       ,type$: type$
-                                       ,u1: u1
-                                       ,u2: u2
-                                       ,underlinePosition: underlinePosition
-                                       ,underlineThickness: underlineThickness
-                                       ,unicode: unicode
-                                       ,unicodeRange: unicodeRange
-                                       ,unitsPerEm: unitsPerEm
-                                       ,vAlphabetic: vAlphabetic
-                                       ,vHanging: vHanging
-                                       ,vIdeographic: vIdeographic
-                                       ,vMathematical: vMathematical
-                                       ,values: values
-                                       ,version: version
-                                       ,vertAdvY: vertAdvY
-                                       ,vertOriginX: vertOriginX
-                                       ,vertOriginY: vertOriginY
-                                       ,viewBox: viewBox
-                                       ,viewTarget: viewTarget
-                                       ,width: width
-                                       ,widths: widths
-                                       ,x: x
-                                       ,xHeight: xHeight
-                                       ,x1: x1
-                                       ,x2: x2
-                                       ,xChannelSelector: xChannelSelector
-                                       ,xlinkActuate: xlinkActuate
-                                       ,xlinkArcrole: xlinkArcrole
-                                       ,xlinkHref: xlinkHref
-                                       ,xlinkRole: xlinkRole
-                                       ,xlinkShow: xlinkShow
-                                       ,xlinkTitle: xlinkTitle
-                                       ,xlinkType: xlinkType
-                                       ,xmlBase: xmlBase
-                                       ,xmlLang: xmlLang
-                                       ,xmlSpace: xmlSpace
-                                       ,y: y
-                                       ,y1: y1
-                                       ,y2: y2
-                                       ,yChannelSelector: yChannelSelector
-                                       ,z: z
-                                       ,zoomAndPan: zoomAndPan
-                                       ,alignmentBaseline: alignmentBaseline
-                                       ,baselineShift: baselineShift
-                                       ,clipPath: clipPath
-                                       ,clipRule: clipRule
-                                       ,clip: clip
-                                       ,colorInterpolationFilters: colorInterpolationFilters
-                                       ,colorInterpolation: colorInterpolation
-                                       ,colorProfile: colorProfile
-                                       ,colorRendering: colorRendering
-                                       ,color: color
-                                       ,cursor: cursor
-                                       ,direction: direction
-                                       ,display: display
-                                       ,dominantBaseline: dominantBaseline
-                                       ,enableBackground: enableBackground
-                                       ,fillOpacity: fillOpacity
-                                       ,fillRule: fillRule
-                                       ,fill: fill
-                                       ,filter: filter
-                                       ,floodColor: floodColor
-                                       ,floodOpacity: floodOpacity
-                                       ,fontFamily: fontFamily
-                                       ,fontSizeAdjust: fontSizeAdjust
-                                       ,fontSize: fontSize
-                                       ,fontStretch: fontStretch
-                                       ,fontStyle: fontStyle
-                                       ,fontVariant: fontVariant
-                                       ,fontWeight: fontWeight
-                                       ,glyphOrientationHorizontal: glyphOrientationHorizontal
-                                       ,glyphOrientationVertical: glyphOrientationVertical
-                                       ,imageRendering: imageRendering
-                                       ,kerning: kerning
-                                       ,letterSpacing: letterSpacing
-                                       ,lightingColor: lightingColor
-                                       ,markerEnd: markerEnd
-                                       ,markerMid: markerMid
-                                       ,markerStart: markerStart
-                                       ,mask: mask
-                                       ,opacity: opacity
-                                       ,overflow: overflow
-                                       ,pointerEvents: pointerEvents
-                                       ,shapeRendering: shapeRendering
-                                       ,stopColor: stopColor
-                                       ,stopOpacity: stopOpacity
-                                       ,strokeDasharray: strokeDasharray
-                                       ,strokeDashoffset: strokeDashoffset
-                                       ,strokeLinecap: strokeLinecap
-                                       ,strokeLinejoin: strokeLinejoin
-                                       ,strokeMiterlimit: strokeMiterlimit
-                                       ,strokeOpacity: strokeOpacity
-                                       ,strokeWidth: strokeWidth
-                                       ,stroke: stroke
-                                       ,textAnchor: textAnchor
-                                       ,textDecoration: textDecoration
-                                       ,textRendering: textRendering
-                                       ,unicodeBidi: unicodeBidi
-                                       ,visibility: visibility
-                                       ,wordSpacing: wordSpacing
-                                       ,writingMode: writingMode};
-};
-Elm.StartApp = Elm.StartApp || {};
+};Elm.StartApp = Elm.StartApp || {};
 Elm.StartApp.Simple = Elm.StartApp.Simple || {};
 Elm.StartApp.Simple.make = function (_elm) {
    "use strict";
@@ -10801,8 +10279,7 @@ Elm.StartApp.Simple.make = function (_elm) {
    };
    var Config = F3(function (a,b,c) {    return {model: a,view: b,update: c};});
    return _elm.StartApp.Simple.values = {_op: _op,Config: Config,start: start};
-};
-Elm.Game = Elm.Game || {};
+};Elm.Game = Elm.Game || {};
 Elm.Game.make = function (_elm) {
    "use strict";
    _elm.Game = _elm.Game || {};
@@ -10811,62 +10288,19 @@ Elm.Game.make = function (_elm) {
    $Basics = Elm.Basics.make(_elm),
    $Debug = Elm.Debug.make(_elm),
    $Html = Elm.Html.make(_elm),
-   $Html$Events = Elm.Html.Events.make(_elm),
    $List = Elm.List.make(_elm),
    $Maybe = Elm.Maybe.make(_elm),
    $Result = Elm.Result.make(_elm),
    $Signal = Elm.Signal.make(_elm),
-   $StartApp$Simple = Elm.StartApp.Simple.make(_elm),
-   $Svg = Elm.Svg.make(_elm),
-   $Svg$Attributes = Elm.Svg.Attributes.make(_elm);
+   $StartApp$Simple = Elm.StartApp.Simple.make(_elm);
    var _op = {};
-   var cellSize = 50;
-   var drawCell = function (cell) {
-      return A2($Svg.rect,
-      _U.list([$Svg$Attributes.x($Basics.toString(cell.x * cellSize))
-              ,$Svg$Attributes.y($Basics.toString(cell.y * cellSize))
-              ,$Svg$Attributes.width($Basics.toString(cellSize))
-              ,$Svg$Attributes.height($Basics.toString(cellSize))
-              ,$Svg$Attributes.style("fill: #efefef")]),
-      _U.list([]));
-   };
-   var drawBoard = F2(function (size,living) {
-      return A2($Svg.svg,
-      _U.list([$Svg$Attributes.width($Basics.toString(cellSize * size))
-              ,$Svg$Attributes.height($Basics.toString(cellSize * size))
-              ,$Svg$Attributes.style("background-color: #222")]),
-      A2($List.map,drawCell,living));
-   });
-   var update = F2(function (action,model) {
-      var _p0 = action;
-      if (_p0.ctor === "NoOp") {
-            return model;
-         } else {
-            return _U.update(model,{step: model.step + 1});
-         }
-   });
-   var Step = {ctor: "Step"};
    var view = F2(function (address,model) {
-      return A2($Html.div,
-      _U.list([]),
-      _U.list([$Html.text("Game of Life")
-              ,A2($Html.div,_U.list([]),_U.list([A2(drawBoard,model.size,model.living)]))
-              ,A2($Html.div,_U.list([]),_U.list([$Html.text($Basics.toString(model.step))]))
-              ,A2($Html.div,_U.list([]),_U.list([A2($Html.button,_U.list([A2($Html$Events.onClick,address,Step)]),_U.list([$Html.text("Step")]))]))]));
+      return A2($Html.div,_U.list([]),_U.list([$Html.text("Game"),A2($Html.div,_U.list([]),_U.list([$Html.text($Basics.toString(model))]))]));
    });
-   var main = $StartApp$Simple.start({view: view,update: update,model: {step: 0,size: 4,living: _U.list([{x: 0,y: 0},{x: 1,y: 1},{x: 2,y: 2},{x: 3,y: 3}])}});
-   var NoOp = {ctor: "NoOp"};
-   var Model = F3(function (a,b,c) {    return {step: a,size: b,living: c};});
-   var Cell = F2(function (a,b) {    return {x: a,y: b};});
-   return _elm.Game.values = {_op: _op
-                             ,Cell: Cell
-                             ,Model: Model
-                             ,NoOp: NoOp
-                             ,Step: Step
-                             ,update: update
-                             ,cellSize: cellSize
-                             ,drawCell: drawCell
-                             ,drawBoard: drawBoard
-                             ,view: view
-                             ,main: main};
-};
+   var update = F2(function (action,model) {    var _p0 = action;if (_p0.ctor === "Increment") {    return model + 1;} else {    return model - 1;}});
+   var main = $StartApp$Simple.start({model: 0,view: view,update: update});
+   var Decrement = {ctor: "Decrement"};
+   var Increment = {ctor: "Increment"};
+   var init = function (count) {    return count;};
+   return _elm.Game.values = {_op: _op,init: init,update: update,view: view};
+};</script></head><body><script type="text/javascript">Elm.fullscreen(Elm.Game)</script></body></html>

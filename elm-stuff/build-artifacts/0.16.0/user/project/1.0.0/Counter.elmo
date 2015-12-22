@@ -1,0 +1,23 @@
+Elm.Counter = Elm.Counter || {};
+Elm.Counter.make = function (_elm) {
+   "use strict";
+   _elm.Counter = _elm.Counter || {};
+   if (_elm.Counter.values) return _elm.Counter.values;
+   var _U = Elm.Native.Utils.make(_elm),
+   $Basics = Elm.Basics.make(_elm),
+   $Debug = Elm.Debug.make(_elm),
+   $Html = Elm.Html.make(_elm),
+   $List = Elm.List.make(_elm),
+   $Maybe = Elm.Maybe.make(_elm),
+   $Result = Elm.Result.make(_elm),
+   $Signal = Elm.Signal.make(_elm);
+   var _op = {};
+   var view = F2(function (address,model) {
+      return A2($Html.div,_U.list([]),_U.list([A2($Html.div,_U.list([]),_U.list([$Html.text($Basics.toString(model))]))]));
+   });
+   var update = F2(function (action,model) {    var _p0 = action;if (_p0.ctor === "Increment") {    return model + 1;} else {    return model - 1;}});
+   var Decrement = {ctor: "Decrement"};
+   var Increment = {ctor: "Increment"};
+   var init = function (count) {    return count;};
+   return _elm.Counter.values = {_op: _op,init: init,update: update,view: view};
+};
